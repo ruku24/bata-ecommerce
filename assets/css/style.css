@@ -15,6 +15,10 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0;
     margin: 0;
 }
+p{
+    padding: 0;
+    margin: 0;
+}
 
 a{
     text-decoration: none;
@@ -197,6 +201,15 @@ a{
 
 /* product details page */
 
+.breadcrumb-item a {
+    color: #000;
+    text-decoration: none;
+}
+.product_brand a{
+    color: #000;
+    text-decoration: none;
+}
+
 .product_image {
     margin-bottom: 20px;
 }
@@ -240,6 +253,24 @@ a{
     font-size: 18px;
     
 }
+.buy_now_btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 250px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 15px 0px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+}
+.buy_now_btn:hover {
+    background-color: #000 !important;
+    color: #fff;
+    border: none;
+}
 .addto_cart:hover {
     background-color: #EC1E24 !important;
     color: #fff;
@@ -255,3 +286,61 @@ a{
     color: #000;
     font-size: 20px;
 }
+
+.size_option label  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 42px;
+    width: 42px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 44px;
+}
+
+.size_option input[type="radio"] {
+    display: none;
+}
+
+.size_option input[type="radio"]:checked + label {
+    background-color: #ff3d00;
+    color: #fff;
+    border: 2px solid #ff3d00;
+}
+.size_option label:hover {
+    background-color: #ff3d00;
+    color: #fff;
+    border: 2px solid #ff3d00;
+}
+.quantity_input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity_input input[type="number"] {
+    width: 70px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.quantity_input button {
+    background-color: #ff3d00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quantity_input button:hover {
+    background-color: #ec1e24;
+}
+
+.nav-tabs{
+    border-bottom: 2px solid #000;
+}
+
